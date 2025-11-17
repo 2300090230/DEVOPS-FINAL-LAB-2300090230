@@ -34,4 +34,9 @@ public class JobApplicantController {
         return service.getById(id)
                       .orElse(null);
     }
+
+    @GetMapping("/")
+    public String hello() {
+        return "Hello from JobApplicantController";
+    }
 }
